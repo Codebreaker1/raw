@@ -1,0 +1,101 @@
+#menu li{
+align: center;
+position:relative;
+float:left;
+list-style:none;
+background: #0E1A61;
+border-radius:5px;
+}
+#menu ul ul{
+align: center;
+position:absolute;
+visibility:hidden;
+padding:0;
+margin:0;
+top:30px;
+bottom:30px;
+}
+#menu ul li a{
+align: center;
+text-align:center;
+font:"Arial Black", Arial;
+font-size:24px;
+color: #FFFFFF;
+width:150px;
+height:30px;
+display:block;
+text-decoration:none;
+}
+#menu ul li:hover{
+background-color:#ADB8F7;
+text-decoration:none;
+}
+#menu ul li:hover ul{
+visibility:visible;
+z-index:1;
+}
+#menu ul li:hover ul li a{
+background: #0E1A61;
+z-index:1;
+border-bottom:1px solid rgba(160,160,164,1);
+opacity:0.9;
+text-decoration:none;
+border-radius:5px;
+}
+#menu ul li ul li:hover{
+background: #FFFFFF;
+opacity:0.8;
+text-decoration:underline;
+} 
+
+table {
+  font-family: "Trebuchet MS", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.4em;
+    font-style: normal;
+    border-collapse:separate;
+
+  margin-left: 200px;
+}
+th { 
+ padding:15px;
+    color:#fff;
+    text-shadow:1px 1px 1px #568F23;
+    border:1px solid #93CE37;
+    border-bottom:3px solid #9ED929;
+    background-color:#9DD929;
+    background:-webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.02, rgb(123,192,67)),
+        color-stop(0.51, rgb(139,198,66)),
+        color-stop(0.87, rgb(158,217,41))
+        );
+    background: -moz-linear-gradient(
+        center bottom,
+        rgb(123,192,67) 2%,
+        rgb(139,198,66) 51%,
+        rgb(158,217,41) 87%
+        );
+    -webkit-border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -moz-border-radius:5px 5px 0px 0px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+td, th { 
+   padding:10px;
+    text-align:center;
+    background-color:#DEF3CA;
+    border: 2px solid #E7EFE0;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    border-radius:2px;
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+}
+tr:nth-of-type(odd) { 
+  background: #eee; 
+}

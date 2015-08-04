@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+<style type="text/css">
+
+
+
+body  {
+      background: url(2.jpg) no-repeat center center fixed; 
+  background-size: 100% 100%;
+   
+}
+
+
+</style>
+
+</head>
+<body>
+<div class="container">
+
+ 
+
+  <div class="row">
+    <div id="slideshow">
+   <div>
+     <img src="images/12.jpg" alt="Null" border="0" style="max-width:100%;height:auto;">
+   </div>
+   <div>
+     <img src="images/3.jpg" alt="Null" border="0" style="max-width:100%;height:auto;">
+   </div>
+   
+</div>
+    
+  </div>
+
+</div>
+
+</body>
+<script>
+
+
+
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+},  3000);
+
+var logoHeight = $('#slideshow" img').height();
+    if (logoHeight < 104) {
+        var margintop = (104 - logoHeight) / 2;
+        $('#slideshow" img').css('margin-top', margintop);
+    }
+</script>
+</html>
